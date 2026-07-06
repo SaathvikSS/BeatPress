@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeatPress</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main id="app" aria-label="BeatPress rhythm game">
+      <canvas id="gameCanvas" width="1280" height="720" aria-label="BeatPress playfield"></canvas>
+
+      <section id="menuView" class="view view-menu is-active" aria-labelledby="gameTitle">
+        <div class="menu-shell">
+          <div class="brand-lockup">
+            <p class="eyebrow">Cosmic orbit rhythm</p>
+            <h1 id="gameTitle">BeatPress</h1>
+          </div>
+          <div id="levelCards" class="level-grid" aria-label="Level select"></div>
+          <div class="settings-strip" aria-label="Gameplay settings">
+            <label class="setting-control">
+              <span>Offset</span>
+              <input id="calibrationInput" type="range" min="-180" max="180" step="5" value="0" />
+              <output id="calibrationValue">0 ms</output>
+            </label>
+            <label class="setting-control setting-toggle">
+              <input id="reduceCameraInput" type="checkbox" />
+              <span>Reduce camera movement</span>
+            </label>
+            <label class="setting-control setting-toggle">
+              <input id="noDeathInput" type="checkbox" />
+              <span>No Death mode</span>
+            </label>
+            <label class="setting-control">
+              <span>On miss</span>
+              <select id="missModeInput">
+                <option value="safety">Allowed-miss safety</option>
+                <option value="checkpoint">Restart at checkpoint</option>
+                <option value="beginning">Restart from beginning</option>
+                <option value="fail">End run</option>
+              </select>
+            </label>
+            <div class="setting-control setting-segmented" id="allowedMissesGroup" role="group" aria-label="Allowed misses">
+              <span>Allowed misses</span>
+              <div class="segmented">
+                <button type="button" data-value="0">0</button>
+                <button type="button" data-value="1">1</button>
+                <button type="button" data-value="2">2</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="readyView" class="view view-ready" aria-live="polite">
+        <div class="ready-panel">
+          <p id="readyKicker" class="eyebrow">Loading level</p>
+          <h2 id="readyTitle">BeatPress</h2>
+          <p id="readyMeta">Preparing audio...</p>
+          <p id="readyPrompt">Ready</p>
+          <div id="variantActions" class="variant-actions is-hidden" aria-label="BeatPress alternate mode">
+            <button id="spamTestButton" type="button">Test</button>
+            <button id="spamLevelButton" type="button">Level</button>
+          </div>
+          <div class="ready-actions">
+            <button id="readyBackButton" type="button">Back</button>
+            <button id="debugToggleReady" type="button">Debug Overlay</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="hudView" class="hud" aria-label="Gameplay HUD">
+        <div class="hud-top">
+          <div>
+            <span id="hudLevel">Level</span>
+            <strong id="hudTimer">0:00.000</strong>
+            <span id="hudDeaths" class="hud-deaths is-hidden">Deaths: 0</span>
+          </div>
+          <div class="hud-stats">
+            <span id="hudFeedback">Ready</span>
+            <span id="hudCombo">0 combo</span>
+            <span id="hudLives">Safety 2/2</span>
+            <span id="hudAccuracy">100.0%</span>
+            <span id="hudPower" class="hud-power is-hidden">3RD PLANET</span>
+          </div>
+          <div class="hud-actions">
+            <button id="freeplayButton" type="button" class="freeplay-button">FreePlay</button>
+            <button id="pauseButton" type="button">Pause</button>
+            <button id="restartButton" type="button">Retry</button>
+            <button id="debugToggleHud" type="button">Debug</button>
+          </div>
+        </div>
+        <div class="progress-shell" aria-label="Level progress">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </section>
+
+      <section id="pauseView" class="view view-pause" aria-live="polite">
+        <div class="dialog-panel">
+          <p class="eyebrow">Paused</p>
+          <h2 id="pauseTitle">BeatPress</h2>
+          <div class="dialog-actions">
+            <button id="resumeButton" type="button">Resume</button>
+            <button id="pauseRestartButton" type="button">Retry</button>
+            <button id="pauseMenuButton" type="button">Level Select</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="resultsView" class="view view-results" aria-live="polite">
+        <div class="results-panel">
+          <p id="resultsKicker" class="eyebrow">Results</p>
+          <h2 id="resultsTitle">BeatPress</h2>
+          <div id="resultsGrade" class="grade">S</div>
+          <div id="resultsStats" class="results-grid"></div>
+          <div class="dialog-actions">
+            <button id="resultsRetryButton" type="button">Retry</button>
+            <button id="resultsMenuButton" type="button">Level Select</button>
+          </div>
+        </div>
+      </section>
+
+      <div id="countdownOverlay" class="countdown-overlay is-hidden" aria-live="polite" aria-label="Start countdown">
+        <span id="countdownNumber" class="countdown-number">1</span>
+      </div>
+
+      <aside id="debugPanel" class="debug-panel" aria-label="Beatmap debug overlay">
+        <div class="debug-header">
+          <strong>Beatmap Debug</strong>
+          <button id="debugCloseButton" type="button">Close</button>
+        </div>
+        <pre id="debugText">No level loaded.</pre>
+      </aside>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

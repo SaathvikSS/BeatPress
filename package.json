@@ -1,0 +1,17 @@
+{
+  "name": "beatpress",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "BeatPress, an original cosmic neon one-button rhythm game.",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "build:levels": "node scripts/build-levels.mjs",
+    "generate:beatmaps": "node scripts/generate-beatmaps.mjs",
+    "audit:beatmaps": "node scripts/audit-beatmaps.mjs",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}

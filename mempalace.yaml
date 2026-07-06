@@ -1,0 +1,20 @@
+wing: music_spam_game
+rooms:
+- name: beatmaps
+  description: Files from beatmaps/
+  keywords:
+  - beatmaps
+  - beatmaps
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: src
+  description: Files from src/
+  keywords:
+  - src
+  - src
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

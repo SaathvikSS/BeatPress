@@ -1,0 +1,7667 @@
+{
+  "schemaVersion": 1,
+  "id": "level2",
+  "title": "Ion Wake",
+  "subtitle": "Generated from clips 6-10",
+  "duration": 150,
+  "difficulty": {
+    "label": "Medium",
+    "target": "strict but fair one-button orbit timing",
+    "notes": "First 20 seconds are mostly clear beat-grid inputs; later sections add measured syncopation, arcs, spirals, bursts, and call-response turns."
+  },
+  "audio": {
+    "strategy": "Five supplied clips scheduled as 30 second segments for an exact 2:30 level.",
+    "segments": [
+      {
+        "file": "Iron_Lung.mp3",
+        "levelStart": 0,
+        "sourceStart": 0,
+        "duration": 30,
+        "detectedBpm": 151,
+        "beatInterval": 0.3974,
+        "firstBeatPhase": 0.3835,
+        "onsetCount": 133
+      },
+      {
+        "file": "Iron_Teeth_Glass_Keys.mp3",
+        "levelStart": 30,
+        "sourceStart": 0,
+        "duration": 30,
+        "detectedBpm": 140,
+        "beatInterval": 0.4286,
+        "firstBeatPhase": 0.4095,
+        "onsetCount": 147
+      },
+      {
+        "file": "Overclocked_Nerve.mp3",
+        "levelStart": 60,
+        "sourceStart": 0,
+        "duration": 30,
+        "detectedBpm": 100,
+        "beatInterval": 0.6,
+        "firstBeatPhase": 0.5067,
+        "onsetCount": 172
+      },
+      {
+        "file": "Sun_Drenched_Logic.mp3",
+        "levelStart": 90,
+        "sourceStart": 0,
+        "duration": 30,
+        "detectedBpm": 100,
+        "beatInterval": 0.6,
+        "firstBeatPhase": 0.512,
+        "onsetCount": 151
+      },
+      {
+        "file": "Synchronized_Glide.mp3",
+        "levelStart": 120,
+        "sourceStart": 0,
+        "duration": 30,
+        "detectedBpm": 155,
+        "beatInterval": 0.3871,
+        "firstBeatPhase": 0.6668,
+        "onsetCount": 151
+      }
+    ]
+  },
+  "timing": {
+    "inputOffsetSeconds": 0,
+    "windows": {
+      "perfect": 0.045,
+      "good": 0.085,
+      "miss": 0.135
+    }
+  },
+  "sections": [
+    {
+      "label": "intro groove setup",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "label": "first complexity increase",
+      "start": 20,
+      "end": 48
+    },
+    {
+      "label": "call-and-response pattern",
+      "start": 48,
+      "end": 78
+    },
+    {
+      "label": "visual highlight section",
+      "start": 78,
+      "end": 108
+    },
+    {
+      "label": "final challenge phrase",
+      "start": 108,
+      "end": 140
+    },
+    {
+      "label": "ending resolution",
+      "start": 140,
+      "end": 150
+    }
+  ],
+  "checkpoints": [
+    {
+      "label": "Start",
+      "time": 0,
+      "nodeIndex": 0
+    },
+    {
+      "label": "Groove",
+      "time": 19.854,
+      "nodeIndex": 49
+    },
+    {
+      "label": "Complexity",
+      "time": 47.981,
+      "nodeIndex": 116
+    },
+    {
+      "label": "Highlight",
+      "time": 77.907,
+      "nodeIndex": 173
+    },
+    {
+      "label": "Final phrase",
+      "time": 107.912,
+      "nodeIndex": 229
+    },
+    {
+      "label": "Resolution",
+      "time": 140.022,
+      "nodeIndex": 302
+    }
+  ],
+  "cameraCues": [
+    {
+      "time": 0,
+      "nodeIndex": 0,
+      "type": "checkpoint",
+      "zoom": 0.02,
+      "rotation": 0,
+      "shake": 0.1
+    },
+    {
+      "time": 19.854,
+      "nodeIndex": 49,
+      "type": "checkpoint",
+      "zoom": 0.11,
+      "rotation": -0.08,
+      "shake": 0.082
+    },
+    {
+      "time": 20.251,
+      "nodeIndex": 50,
+      "type": "phrase accent",
+      "zoom": 0.11,
+      "rotation": 0.08,
+      "shake": 0.107
+    },
+    {
+      "time": 47.981,
+      "nodeIndex": 116,
+      "type": "checkpoint",
+      "zoom": 0.11,
+      "rotation": 0.08,
+      "shake": 0.107
+    },
+    {
+      "time": 77.907,
+      "nodeIndex": 173,
+      "type": "checkpoint",
+      "zoom": 0.11,
+      "rotation": 0.08,
+      "shake": 0.137
+    },
+    {
+      "time": 107.912,
+      "nodeIndex": 229,
+      "type": "checkpoint",
+      "zoom": 0.11,
+      "rotation": -0.08,
+      "shake": 0.158
+    },
+    {
+      "time": 140.022,
+      "nodeIndex": 302,
+      "type": "checkpoint",
+      "zoom": 0.11,
+      "rotation": 0.08,
+      "shake": 0.122
+    }
+  ],
+  "nodes": [
+    {
+      "id": 0,
+      "time": 0,
+      "x": 1788.917,
+      "y": -435.781,
+      "angle": -144,
+      "turnDegrees": 0,
+      "spin": 1,
+      "interval": 0,
+      "accent": true,
+      "sourceBeat": true,
+      "section": "intro groove setup",
+      "visualIntensity": 0.44,
+      "cameraCue": {
+        "zoom": 0.02,
+        "rotation": 0,
+        "shake": 0.1
+      },
+      "checkpoint": true
+    },
+    {
+      "id": 1,
+      "time": 0.781,
+      "x": 1741.894,
+      "y": -371.06,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.781,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 0.781,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 2,
+      "time": 1.178,
+      "x": 1686.881,
+      "y": -411.029,
+      "angle": 216,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.178,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 3,
+      "time": 1.576,
+      "x": 1749.002,
+      "y": -438.688,
+      "angle": 336,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.576,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 4,
+      "time": 1.973,
+      "x": 1719.717,
+      "y": -504.462,
+      "angle": 246,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 1.973,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 5,
+      "time": 2.37,
+      "x": 1759.686,
+      "y": -559.476,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.37,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 6,
+      "time": 2.768,
+      "x": 1692.059,
+      "y": -566.583,
+      "angle": 186,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.768,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 7,
+      "time": 3.165,
+      "x": 1699.167,
+      "y": -634.212,
+      "angle": 276,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 3.165,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 8,
+      "time": 3.562,
+      "x": 1764.942,
+      "y": -663.496,
+      "angle": 336,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 3.562,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 9,
+      "time": 3.96,
+      "x": 1737.284,
+      "y": -725.618,
+      "angle": 246,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 3.96,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 10,
+      "time": 4.357,
+      "x": 1799.405,
+      "y": -753.275,
+      "angle": 336,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.357,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 11,
+      "time": 4.754,
+      "x": 1792.297,
+      "y": -685.649,
+      "angle": 96,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.754,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 12,
+      "time": 5.152,
+      "x": 1858.073,
+      "y": -714.933,
+      "angle": 336,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 5.152,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 13,
+      "time": 5.549,
+      "x": 1913.086,
+      "y": -674.963,
+      "angle": 36,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.549,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 14,
+      "time": 5.946,
+      "x": 1920.194,
+      "y": -742.591,
+      "angle": 276,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.946,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 15,
+      "time": 6.344,
+      "x": 1987.821,
+      "y": -735.484,
+      "angle": 6,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.344,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 16,
+      "time": 6.741,
+      "x": 2017.106,
+      "y": -669.708,
+      "angle": 66,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 6.741,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 17,
+      "time": 7.138,
+      "x": 2079.227,
+      "y": -697.366,
+      "angle": 336,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.138,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 18,
+      "time": 7.536,
+      "x": 2106.885,
+      "y": -635.245,
+      "angle": 66,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.536,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 19,
+      "time": 7.933,
+      "x": 2039.258,
+      "y": -642.353,
+      "angle": 186,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.933,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 20,
+      "time": 8.331,
+      "x": 2031.732,
+      "y": -570.747,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 8.331,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 21,
+      "time": 8.728,
+      "x": 2086.745,
+      "y": -530.779,
+      "angle": 36,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.728,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 22,
+      "time": 9.125,
+      "x": 2148.866,
+      "y": -558.437,
+      "angle": 336,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.125,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 23,
+      "time": 9.523,
+      "x": 2176.524,
+      "y": -496.315,
+      "angle": 66,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.523,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 24,
+      "time": 9.92,
+      "x": 2134.204,
+      "y": -438.065,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 9.92,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 25,
+      "time": 10.317,
+      "x": 2189.217,
+      "y": -398.096,
+      "angle": 36,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 10.317,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 26,
+      "time": 10.715,
+      "x": 2149.247,
+      "y": -343.084,
+      "angle": 126,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 10.715,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 27,
+      "time": 11.112,
+      "x": 2094.234,
+      "y": -383.053,
+      "angle": 216,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.112,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 28,
+      "time": 11.509,
+      "x": 2051.914,
+      "y": -324.803,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 11.509,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 29,
+      "time": 11.907,
+      "x": 1984.286,
+      "y": -331.911,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.907,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 30,
+      "time": 12.304,
+      "x": 2011.944,
+      "y": -269.79,
+      "angle": 66,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 12.304,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 31,
+      "time": 12.701,
+      "x": 1949.823,
+      "y": -242.132,
+      "angle": 156,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 12.701,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 32,
+      "time": 13.099,
+      "x": 1920.538,
+      "y": -307.908,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 13.099,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 33,
+      "time": 13.496,
+      "x": 1913.43,
+      "y": -240.28,
+      "angle": 96,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.496,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 34,
+      "time": 13.893,
+      "x": 1851.309,
+      "y": -212.621,
+      "angle": 156,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.893,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 35,
+      "time": 14.291,
+      "x": 1891.279,
+      "y": -267.635,
+      "angle": 306,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.291,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0417,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 36,
+      "time": 14.688,
+      "x": 1825.503,
+      "y": -238.35,
+      "angle": 156,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 14.688,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 37,
+      "time": 15.085,
+      "x": 1818.395,
+      "y": -170.722,
+      "angle": 96,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.085,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 38,
+      "time": 15.483,
+      "x": 1873.408,
+      "y": -130.753,
+      "angle": 36,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.483,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 39,
+      "time": 15.88,
+      "x": 1833.439,
+      "y": -75.74,
+      "angle": 126,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.88,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 40,
+      "time": 16.278,
+      "x": 1761.833,
+      "y": -83.267,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 16.278,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 41,
+      "time": 16.675,
+      "x": 1754.726,
+      "y": -15.639,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 16.675,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 42,
+      "time": 17.072,
+      "x": 1687.098,
+      "y": -22.746,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.072,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 43,
+      "time": 17.47,
+      "x": 1659.44,
+      "y": -84.868,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.47,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 44,
+      "time": 17.867,
+      "x": 1593.665,
+      "y": -55.582,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 17.867,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 45,
+      "time": 18.264,
+      "x": 1538.652,
+      "y": -95.551,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.264,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.082
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 46,
+      "time": 18.662,
+      "x": 1531.544,
+      "y": -27.924,
+      "angle": 96,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.662,
+      "section": "intro groove setup",
+      "visualIntensity": 0.492,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.089
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 47,
+      "time": 19.059,
+      "x": 1463.916,
+      "y": -35.032,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 19.059,
+      "section": "intro groove setup",
+      "visualIntensity": 0.484,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.087
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 48,
+      "time": 19.456,
+      "x": 1471.442,
+      "y": -106.637,
+      "angle": 276,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 19.456,
+      "section": "intro groove setup",
+      "visualIntensity": 0.575,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.345
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 49,
+      "time": 19.854,
+      "x": 1403.815,
+      "y": -113.745,
+      "angle": 186,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 19.854,
+      "section": "intro groove setup",
+      "visualIntensity": 0.455,
+      "cameraCue": {
+        "zoom": 0.11,
+        "rotation": -0.08,
+        "shake": 0.082
+      },
+      "checkpoint": true
+    },
+    {
+      "id": 50,
+      "time": 20.251,
+      "x": 1443.784,
+      "y": -168.76,
+      "angle": 306,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.251,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.11,
+        "rotation": 0.08,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 51,
+      "time": 20.648,
+      "x": 1416.126,
+      "y": -230.88,
+      "angle": 246,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.648,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 52,
+      "time": 21.046,
+      "x": 1481.901,
+      "y": -260.165,
+      "angle": 336,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 21.046,
+      "section": "first complexity increase",
+      "visualIntensity": 0.79,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.474
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 53,
+      "time": 21.443,
+      "x": 1439.581,
+      "y": -201.915,
+      "angle": 126,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 21.443,
+      "section": "first complexity increase",
+      "visualIntensity": 0.806,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0417,
+        "shake": 0.483
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 54,
+      "time": 21.84,
+      "x": 1501.702,
+      "y": -229.575,
+      "angle": 336,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.84,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 55,
+      "time": 22.238,
+      "x": 1508.81,
+      "y": -297.202,
+      "angle": 276,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 22.238,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 56,
+      "time": 22.635,
+      "x": 1580.415,
+      "y": -289.675,
+      "angle": 6,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 22.635,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 57,
+      "time": 23.033,
+      "x": 1525.402,
+      "y": -329.644,
+      "angle": 216,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.033,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 58,
+      "time": 23.43,
+      "x": 1532.51,
+      "y": -397.272,
+      "angle": 276,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.43,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 59,
+      "time": 23.827,
+      "x": 1477.497,
+      "y": -437.241,
+      "angle": 216,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.827,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 60,
+      "time": 24.225,
+      "x": 1411.722,
+      "y": -407.957,
+      "angle": 156,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 24.225,
+      "section": "first complexity increase",
+      "visualIntensity": 0.733,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.44
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 61,
+      "time": 24.622,
+      "x": 1356.709,
+      "y": -447.926,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 24.622,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 62,
+      "time": 25.019,
+      "x": 1294.587,
+      "y": -420.269,
+      "angle": 156,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.019,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 63,
+      "time": 25.417,
+      "x": 1266.929,
+      "y": -482.389,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.417,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 64,
+      "time": 25.814,
+      "x": 1338.535,
+      "y": -474.863,
+      "angle": 6,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 25.814,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 65,
+      "time": 26.211,
+      "x": 1366.193,
+      "y": -412.743,
+      "angle": 66,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.211,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 66,
+      "time": 26.609,
+      "x": 1298.566,
+      "y": -419.849,
+      "angle": 186,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.609,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 67,
+      "time": 27.006,
+      "x": 1269.28,
+      "y": -485.625,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 27.006,
+      "section": "first complexity increase",
+      "visualIntensity": 0.774,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.464
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 68,
+      "time": 27.403,
+      "x": 1203.505,
+      "y": -456.341,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 27.403,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 69,
+      "time": 27.801,
+      "x": 1196.397,
+      "y": -388.712,
+      "angle": 96,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 27.801,
+      "section": "first complexity increase",
+      "visualIntensity": 0.603,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.109
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 70,
+      "time": 28.198,
+      "x": 1134.276,
+      "y": -361.054,
+      "angle": 156,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.198,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 71,
+      "time": 28.595,
+      "x": 1079.263,
+      "y": -401.024,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.595,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 72,
+      "time": 28.993,
+      "x": 1013.488,
+      "y": -371.738,
+      "angle": 156,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.397,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 28.993,
+      "section": "first complexity increase",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 73,
+      "time": 29.39,
+      "x": 958.475,
+      "y": -411.709,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 29.39,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 74,
+      "time": 29.787,
+      "x": 998.444,
+      "y": -466.721,
+      "angle": 306,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.397,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 29.787,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 75,
+      "time": 30.41,
+      "x": 1027.729,
+      "y": -400.947,
+      "angle": 66,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.622,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 0.41,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 76,
+      "time": 30.838,
+      "x": 987.76,
+      "y": -345.933,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 0.838,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 77,
+      "time": 31.267,
+      "x": 1015.418,
+      "y": -283.812,
+      "angle": 66,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.267,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 78,
+      "time": 31.695,
+      "x": 975.448,
+      "y": -228.798,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.695,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 79,
+      "time": 32.124,
+      "x": 903.843,
+      "y": -236.325,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 2.124,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 80,
+      "time": 32.552,
+      "x": 896.735,
+      "y": -168.697,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.552,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 81,
+      "time": 32.981,
+      "x": 951.748,
+      "y": -128.728,
+      "angle": 36,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.981,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 82,
+      "time": 33.41,
+      "x": 944.64,
+      "y": -61.101,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 3.41,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 83,
+      "time": 33.838,
+      "x": 873.034,
+      "y": -68.627,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 3.838,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 84,
+      "time": 34.267,
+      "x": 833.065,
+      "y": -13.613,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.267,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 85,
+      "time": 34.695,
+      "x": 805.407,
+      "y": -75.734,
+      "angle": 246,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.695,
+      "section": "first complexity increase",
+      "visualIntensity": 0.608,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.109
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 86,
+      "time": 35.124,
+      "x": 743.286,
+      "y": -48.077,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.124,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 87,
+      "time": 35.552,
+      "x": 685.037,
+      "y": -90.397,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 5.552,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 88,
+      "time": 35.981,
+      "x": 645.067,
+      "y": -35.383,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.981,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 89,
+      "time": 36.41,
+      "x": 700.08,
+      "y": 4.586,
+      "angle": 36,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.41,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 90,
+      "time": 36.838,
+      "x": 692.972,
+      "y": 72.214,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.838,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 91,
+      "time": 37.267,
+      "x": 621.367,
+      "y": 64.688,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 7.267,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 92,
+      "time": 37.695,
+      "x": 581.397,
+      "y": 119.7,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.695,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 93,
+      "time": 38.124,
+      "x": 553.739,
+      "y": 57.579,
+      "angle": 246,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.124,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 94,
+      "time": 38.552,
+      "x": 491.618,
+      "y": 85.238,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.552,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 95,
+      "time": 38.981,
+      "x": 462.333,
+      "y": 19.462,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 8.981,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 96,
+      "time": 39.41,
+      "x": 400.212,
+      "y": 47.12,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.41,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 97,
+      "time": 39.838,
+      "x": 427.87,
+      "y": 109.242,
+      "angle": 66,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.838,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 98,
+      "time": 40.267,
+      "x": 489.991,
+      "y": 81.584,
+      "angle": 336,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 10.267,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 99,
+      "time": 40.695,
+      "x": 482.465,
+      "y": 153.189,
+      "angle": 96,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 10.695,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 100,
+      "time": 41.124,
+      "x": 414.838,
+      "y": 146.08,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.124,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 101,
+      "time": 41.552,
+      "x": 374.868,
+      "y": 201.094,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.552,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 102,
+      "time": 41.981,
+      "x": 307.241,
+      "y": 193.986,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.981,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 103,
+      "time": 42.41,
+      "x": 277.956,
+      "y": 128.21,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 12.41,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 104,
+      "time": 42.838,
+      "x": 332.969,
+      "y": 168.18,
+      "angle": 36,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 12.838,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0417,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 105,
+      "time": 43.267,
+      "x": 325.861,
+      "y": 235.808,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.267,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 106,
+      "time": 43.695,
+      "x": 380.874,
+      "y": 275.776,
+      "angle": 36,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.695,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 107,
+      "time": 44.124,
+      "x": 315.099,
+      "y": 305.061,
+      "angle": 156,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 14.124,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 108,
+      "time": 44.552,
+      "x": 260.086,
+      "y": 265.093,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.552,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 109,
+      "time": 44.981,
+      "x": 252.978,
+      "y": 332.72,
+      "angle": 96,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.981,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 110,
+      "time": 45.41,
+      "x": 190.857,
+      "y": 360.378,
+      "angle": 156,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.41,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 111,
+      "time": 45.838,
+      "x": 132.608,
+      "y": 318.058,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 15.838,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 112,
+      "time": 46.267,
+      "x": 66.832,
+      "y": 347.343,
+      "angle": 156,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 16.267,
+      "section": "first complexity increase",
+      "visualIntensity": 0.762,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.457
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 113,
+      "time": 46.695,
+      "x": 59.724,
+      "y": 414.97,
+      "angle": 96,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 16.695,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 114,
+      "time": 47.124,
+      "x": 127.352,
+      "y": 422.079,
+      "angle": 6,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.124,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.107
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 115,
+      "time": 47.552,
+      "x": 85.031,
+      "y": 480.328,
+      "angle": 126,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 17.552,
+      "section": "first complexity increase",
+      "visualIntensity": 0.715,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.429
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 116,
+      "time": 47.981,
+      "x": 30.018,
+      "y": 440.358,
+      "angle": 216,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.981,
+      "section": "first complexity increase",
+      "visualIntensity": 0.595,
+      "cameraCue": {
+        "zoom": 0.11,
+        "rotation": 0.08,
+        "shake": 0.107
+      },
+      "checkpoint": true
+    },
+    {
+      "id": 117,
+      "time": 48.41,
+      "x": 37.126,
+      "y": 372.73,
+      "angle": 276,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.41,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 118,
+      "time": 48.838,
+      "x": -24.995,
+      "y": 400.388,
+      "angle": 156,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.838,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 119,
+      "time": 49.267,
+      "x": -83.244,
+      "y": 358.068,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 19.267,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 120,
+      "time": 49.695,
+      "x": -123.214,
+      "y": 413.082,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 19.695,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 121,
+      "time": 50.124,
+      "x": -178.227,
+      "y": 373.112,
+      "angle": 216,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.124,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.738,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.133
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 122,
+      "time": 50.552,
+      "x": -185.335,
+      "y": 440.739,
+      "angle": 96,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.552,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 123,
+      "time": 50.981,
+      "x": -243.584,
+      "y": 398.419,
+      "angle": 216,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 20.981,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.87,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.522
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 124,
+      "time": 51.41,
+      "x": -283.553,
+      "y": 453.431,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.41,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 125,
+      "time": 51.838,
+      "x": -255.895,
+      "y": 515.553,
+      "angle": 66,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.838,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 126,
+      "time": 52.267,
+      "x": -323.523,
+      "y": 508.445,
+      "angle": 186,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 22.267,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 127,
+      "time": 52.695,
+      "x": -331.049,
+      "y": 580.051,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 22.695,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 128,
+      "time": 53.124,
+      "x": -398.676,
+      "y": 572.943,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.124,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 129,
+      "time": 53.552,
+      "x": -405.784,
+      "y": 640.571,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.552,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 130,
+      "time": 53.981,
+      "x": -460.797,
+      "y": 600.601,
+      "angle": 216,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.981,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 131,
+      "time": 54.41,
+      "x": -468.323,
+      "y": 672.207,
+      "angle": 96,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 24.41,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 132,
+      "time": 54.838,
+      "x": -535.951,
+      "y": 665.099,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 24.838,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 133,
+      "time": 55.267,
+      "x": -563.609,
+      "y": 602.977,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.267,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 134,
+      "time": 55.695,
+      "x": -603.578,
+      "y": 657.99,
+      "angle": 126,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.695,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 135,
+      "time": 56.124,
+      "x": -661.828,
+      "y": 615.669,
+      "angle": 216,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 26.124,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 136,
+      "time": 56.552,
+      "x": -723.949,
+      "y": 643.327,
+      "angle": 156,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.552,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 137,
+      "time": 56.981,
+      "x": -731.057,
+      "y": 710.956,
+      "angle": 96,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.981,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 138,
+      "time": 57.41,
+      "x": -672.807,
+      "y": 753.275,
+      "angle": 36,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 27.41,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.899,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.539
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 139,
+      "time": 57.838,
+      "x": -702.092,
+      "y": 687.5,
+      "angle": 246,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 27.838,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 140,
+      "time": 58.267,
+      "x": -769.72,
+      "y": 680.392,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.267,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 141,
+      "time": 58.695,
+      "x": -797.378,
+      "y": 618.272,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.695,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 142,
+      "time": 59.124,
+      "x": -865.005,
+      "y": 611.163,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 29.124,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 143,
+      "time": 59.552,
+      "x": -907.326,
+      "y": 669.412,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.429,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 29.552,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 144,
+      "time": 60.507,
+      "x": -941.492,
+      "y": 592.676,
+      "angle": 246,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.954,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 0.507,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 145,
+      "time": 61.107,
+      "x": -901.523,
+      "y": 537.661,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.107,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.758,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.136
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 146,
+      "time": 61.707,
+      "x": -930.808,
+      "y": 471.887,
+      "angle": 246,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 1.707,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.912,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.547
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 147,
+      "time": 62.307,
+      "x": -863.18,
+      "y": 478.994,
+      "angle": 6,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.307,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 148,
+      "time": 62.907,
+      "x": -855.654,
+      "y": 407.39,
+      "angle": 276,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 2.907,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 149,
+      "time": 63.507,
+      "x": -927.26,
+      "y": 399.863,
+      "angle": 186,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 3.507,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.906,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.544
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 150,
+      "time": 64.107,
+      "x": -954.918,
+      "y": 337.742,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.107,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 151,
+      "time": 64.707,
+      "x": -914.948,
+      "y": 282.728,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.707,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.741,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.133
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 152,
+      "time": 65.307,
+      "x": -856.699,
+      "y": 325.05,
+      "angle": 36,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 5.307,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 153,
+      "time": 65.907,
+      "x": -924.327,
+      "y": 317.941,
+      "angle": 186,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.907,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.754,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0417,
+        "shake": 0.136
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 154,
+      "time": 66.507,
+      "x": -951.985,
+      "y": 255.82,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.507,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 155,
+      "time": 66.955,
+      "x": -1023.59,
+      "y": 248.295,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.448,
+      "accent": true,
+      "sourceBeat": false,
+      "sourceTime": 6.955,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.932,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.559
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 156,
+      "time": 67.707,
+      "x": -974.216,
+      "y": 180.337,
+      "angle": 306,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.752,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 7.707,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 157,
+      "time": 68.307,
+      "x": -1041.844,
+      "y": 173.228,
+      "angle": 186,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.307,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.74,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.133
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 158,
+      "time": 68.907,
+      "x": -1034.318,
+      "y": 101.623,
+      "angle": 276,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 8.907,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.939,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.563
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 159,
+      "time": 69.507,
+      "x": -1089.331,
+      "y": 61.654,
+      "angle": 216,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.507,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 160,
+      "time": 70.107,
+      "x": -1131.651,
+      "y": 119.903,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 10.107,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 161,
+      "time": 70.707,
+      "x": -1065.876,
+      "y": 90.618,
+      "angle": 336,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 10.707,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.935,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.561
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 162,
+      "time": 71.307,
+      "x": -1058.768,
+      "y": 22.99,
+      "angle": 276,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.307,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 163,
+      "time": 71.907,
+      "x": -996.647,
+      "y": -4.668,
+      "angle": 336,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.907,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.741,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.133
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 164,
+      "time": 72.507,
+      "x": -989.121,
+      "y": -76.274,
+      "angle": 276,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 12.507,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.89,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.534
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 165,
+      "time": 73.107,
+      "x": -1060.727,
+      "y": -83.799,
+      "angle": 186,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 13.107,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.9,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.54
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 166,
+      "time": 73.707,
+      "x": -1018.406,
+      "y": -142.048,
+      "angle": 306,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 13.707,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.979,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.587
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 167,
+      "time": 74.307,
+      "x": -950.779,
+      "y": -134.94,
+      "angle": 6,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.307,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 168,
+      "time": 74.907,
+      "x": -980.064,
+      "y": -200.715,
+      "angle": 246,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 14.907,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.882,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.529
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 169,
+      "time": 75.507,
+      "x": -940.094,
+      "y": -255.728,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.507,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.735,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.132
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 170,
+      "time": 76.107,
+      "x": -881.845,
+      "y": -213.409,
+      "angle": 36,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 16.107,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.911,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.547
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 171,
+      "time": 76.555,
+      "x": -874.319,
+      "y": -285.014,
+      "angle": 276,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.448,
+      "accent": true,
+      "sourceBeat": false,
+      "sourceTime": 16.555,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.907,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.544
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 172,
+      "time": 77.307,
+      "x": -942.276,
+      "y": -334.387,
+      "angle": 216,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.752,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 17.307,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.855,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.513
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 173,
+      "time": 77.907,
+      "x": -880.155,
+      "y": -362.046,
+      "angle": 336,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.907,
+      "section": "call-and-response pattern",
+      "visualIntensity": 0.76,
+      "cameraCue": {
+        "zoom": 0.11,
+        "rotation": 0.08,
+        "shake": 0.137
+      },
+      "checkpoint": true
+    },
+    {
+      "id": 174,
+      "time": 78.507,
+      "x": -821.906,
+      "y": -319.726,
+      "angle": 36,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 18.507,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 175,
+      "time": 79.107,
+      "x": -759.785,
+      "y": -347.384,
+      "angle": 336,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 19.107,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 176,
+      "time": 79.707,
+      "x": -730.5,
+      "y": -281.608,
+      "angle": 66,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 19.707,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 177,
+      "time": 80.307,
+      "x": -668.379,
+      "y": -309.267,
+      "angle": 336,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.307,
+      "section": "visual highlight section",
+      "visualIntensity": 0.909,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.164
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 178,
+      "time": 80.907,
+      "x": -639.094,
+      "y": -243.492,
+      "angle": 66,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 20.907,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 179,
+      "time": 81.507,
+      "x": -571.466,
+      "y": -236.383,
+      "angle": 6,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.507,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 180,
+      "time": 82.107,
+      "x": -613.787,
+      "y": -178.133,
+      "angle": 126,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 22.107,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 181,
+      "time": 82.707,
+      "x": -681.414,
+      "y": -185.242,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 22.707,
+      "section": "visual highlight section",
+      "visualIntensity": 0.891,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.16
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 182,
+      "time": 83.307,
+      "x": -652.129,
+      "y": -119.466,
+      "angle": 66,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 23.307,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 183,
+      "time": 83.907,
+      "x": -692.099,
+      "y": -64.454,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.907,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 184,
+      "time": 84.507,
+      "x": -662.814,
+      "y": 1.322,
+      "angle": 66,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 24.507,
+      "section": "visual highlight section",
+      "visualIntensity": 0.998,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.599
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 185,
+      "time": 85.107,
+      "x": -702.783,
+      "y": 56.336,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.107,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 186,
+      "time": 85.707,
+      "x": -732.068,
+      "y": -9.44,
+      "angle": 246,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 25.707,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 187,
+      "time": 86.307,
+      "x": -772.038,
+      "y": 45.572,
+      "angle": 126,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.307,
+      "section": "visual highlight section",
+      "visualIntensity": 0.886,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.159
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 188,
+      "time": 86.907,
+      "x": -764.511,
+      "y": -26.032,
+      "angle": 276,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 26.907,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 189,
+      "time": 87.507,
+      "x": -735.226,
+      "y": 39.743,
+      "angle": 66,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 27.507,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 190,
+      "time": 88.107,
+      "x": -806.832,
+      "y": 32.216,
+      "angle": 186,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 28.107,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 191,
+      "time": 88.405,
+      "x": -832.05,
+      "y": -24.423,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.299,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 28.405,
+      "section": "visual highlight section",
+      "visualIntensity": 0.902,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.162
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 192,
+      "time": 88.707,
+      "x": -795.607,
+      "y": -74.582,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.301,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.707,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 193,
+      "time": 89.003,
+      "x": -770.389,
+      "y": -17.942,
+      "angle": 66,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.296,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 29.003,
+      "section": "visual highlight section",
+      "visualIntensity": 0.856,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.154
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 194,
+      "time": 89.307,
+      "x": -830.683,
+      "y": 8.903,
+      "angle": 156,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.304,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 29.307,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 195,
+      "time": 89.909,
+      "x": -823.157,
+      "y": -62.704,
+      "angle": 276,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.603,
+      "accent": true,
+      "sourceBeat": false,
+      "sourceTime": 29.909,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 196,
+      "time": 90.213,
+      "x": -884.818,
+      "y": -69.185,
+      "angle": 186,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.304,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 0.213,
+      "section": "visual highlight section",
+      "visualIntensity": 0.867,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.156
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 197,
+      "time": 90.512,
+      "x": -857.973,
+      "y": -8.89,
+      "angle": 66,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.299,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 0.512,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 198,
+      "time": 91.112,
+      "x": -850.865,
+      "y": -76.517,
+      "angle": 276,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.112,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 199,
+      "time": 91.712,
+      "x": -788.744,
+      "y": -104.175,
+      "angle": 336,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.712,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 200,
+      "time": 92.312,
+      "x": -781.636,
+      "y": -171.803,
+      "angle": 276,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.312,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 201,
+      "time": 92.613,
+      "x": -838.276,
+      "y": -146.585,
+      "angle": 156,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.301,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 2.613,
+      "section": "visual highlight section",
+      "visualIntensity": 0.862,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.155
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 202,
+      "time": 92.912,
+      "x": -799.482,
+      "y": -199.981,
+      "angle": 306,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.299,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 2.912,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0417,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 203,
+      "time": 93.512,
+      "x": -771.824,
+      "y": -137.859,
+      "angle": 66,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 3.512,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 204,
+      "time": 94.112,
+      "x": -764.716,
+      "y": -205.487,
+      "angle": 276,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.112,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 205,
+      "time": 94.712,
+      "x": -819.729,
+      "y": -245.457,
+      "angle": 216,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.712,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 206,
+      "time": 95.312,
+      "x": -790.444,
+      "y": -179.681,
+      "angle": 66,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 5.312,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 207,
+      "time": 95.912,
+      "x": -852.565,
+      "y": -152.024,
+      "angle": 156,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.912,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 208,
+      "time": 96.512,
+      "x": -824.907,
+      "y": -89.902,
+      "angle": 66,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.512,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 209,
+      "time": 97.112,
+      "x": -784.938,
+      "y": -144.916,
+      "angle": 306,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.112,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 210,
+      "time": 97.712,
+      "x": -755.653,
+      "y": -79.139,
+      "angle": 66,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 7.712,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 211,
+      "time": 98.011,
+      "x": -812.292,
+      "y": -53.923,
+      "angle": 156,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.299,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 8.011,
+      "section": "visual highlight section",
+      "visualIntensity": 0.892,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.16
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 212,
+      "time": 98.312,
+      "x": -818.773,
+      "y": 7.738,
+      "angle": 96,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.301,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.312,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 213,
+      "time": 98.619,
+      "x": -868.932,
+      "y": -28.704,
+      "angle": 216,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.307,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 8.619,
+      "section": "visual highlight section",
+      "visualIntensity": 0.853,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.154
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 214,
+      "time": 98.912,
+      "x": -925.572,
+      "y": -3.486,
+      "angle": 156,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.293,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.912,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 215,
+      "time": 99.512,
+      "x": -932.68,
+      "y": 64.141,
+      "angle": 96,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.512,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 216,
+      "time": 100.112,
+      "x": -874.431,
+      "y": 106.462,
+      "angle": 36,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 10.112,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 217,
+      "time": 100.712,
+      "x": -881.539,
+      "y": 174.089,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 10.712,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 218,
+      "time": 101.312,
+      "x": -813.911,
+      "y": 181.196,
+      "angle": 6,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.312,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 219,
+      "time": 101.912,
+      "x": -786.253,
+      "y": 243.318,
+      "angle": 66,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.912,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 220,
+      "time": 102.512,
+      "x": -844.502,
+      "y": 200.998,
+      "angle": 216,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 12.512,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 221,
+      "time": 103.112,
+      "x": -782.381,
+      "y": 173.339,
+      "angle": 336,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.112,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 222,
+      "time": 103.712,
+      "x": -850.009,
+      "y": 166.232,
+      "angle": 186,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.712,
+      "section": "visual highlight section",
+      "visualIntensity": 0.889,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.16
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 223,
+      "time": 104.312,
+      "x": -787.888,
+      "y": 138.573,
+      "angle": 336,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.312,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0417,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 224,
+      "time": 104.912,
+      "x": -795.414,
+      "y": 210.179,
+      "angle": 96,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 14.912,
+      "section": "visual highlight section",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 225,
+      "time": 105.512,
+      "x": -727.786,
+      "y": 217.286,
+      "angle": 6,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.512,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 226,
+      "time": 106.112,
+      "x": -720.678,
+      "y": 149.659,
+      "angle": 276,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 16.112,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 227,
+      "time": 106.712,
+      "x": -665.665,
+      "y": 189.628,
+      "angle": 36,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 16.712,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.158
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 228,
+      "time": 107.312,
+      "x": -673.191,
+      "y": 261.233,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 17.312,
+      "section": "visual highlight section",
+      "visualIntensity": 0.995,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.597
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 229,
+      "time": 107.912,
+      "x": -611.07,
+      "y": 233.575,
+      "angle": 336,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.912,
+      "section": "visual highlight section",
+      "visualIntensity": 0.875,
+      "cameraCue": {
+        "zoom": 0.11,
+        "rotation": -0.08,
+        "shake": 0.158
+      },
+      "checkpoint": true
+    },
+    {
+      "id": 230,
+      "time": 108.208,
+      "x": -560.911,
+      "y": 270.018,
+      "angle": 36,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.296,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 18.208,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 231,
+      "time": 108.512,
+      "x": -504.271,
+      "y": 244.8,
+      "angle": 336,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.304,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.512,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 232,
+      "time": 109.112,
+      "x": -511.379,
+      "y": 312.429,
+      "angle": 96,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 19.112,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 233,
+      "time": 109.712,
+      "x": -469.059,
+      "y": 254.18,
+      "angle": 306,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 19.712,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 234,
+      "time": 110.312,
+      "x": -496.717,
+      "y": 192.059,
+      "angle": 246,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.312,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 235,
+      "time": 110.912,
+      "x": -456.747,
+      "y": 137.045,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.912,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 236,
+      "time": 111.512,
+      "x": -401.734,
+      "y": 177.015,
+      "angle": 36,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.512,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 237,
+      "time": 112.112,
+      "x": -409.26,
+      "y": 248.619,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 22.112,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 238,
+      "time": 112.712,
+      "x": -343.485,
+      "y": 219.334,
+      "angle": 336,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 22.712,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 239,
+      "time": 113.312,
+      "x": -350.593,
+      "y": 286.963,
+      "angle": 96,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.312,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 240,
+      "time": 113.912,
+      "x": -422.199,
+      "y": 279.436,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 23.912,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 241,
+      "time": 114.213,
+      "x": -396.981,
+      "y": 336.076,
+      "angle": 66,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.301,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 24.213,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 242,
+      "time": 114.512,
+      "x": -435.775,
+      "y": 389.472,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.299,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 24.512,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 243,
+      "time": 115.112,
+      "x": -408.117,
+      "y": 451.593,
+      "angle": 66,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.112,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 244,
+      "time": 115.712,
+      "x": -470.238,
+      "y": 479.251,
+      "angle": 156,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.712,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 245,
+      "time": 116.312,
+      "x": -525.251,
+      "y": 439.281,
+      "angle": 216,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.312,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 246,
+      "time": 116.912,
+      "x": -532.777,
+      "y": 510.887,
+      "angle": 96,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 26.912,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 247,
+      "time": 117.512,
+      "x": -604.382,
+      "y": 503.361,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 27.512,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 248,
+      "time": 118.112,
+      "x": -633.667,
+      "y": 437.585,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 28.112,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 249,
+      "time": 118.416,
+      "x": -695.328,
+      "y": 431.104,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.304,
+      "accent": false,
+      "sourceBeat": false,
+      "sourceTime": 28.416,
+      "section": "final challenge phrase",
+      "visualIntensity": 0.993,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.179
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 250,
+      "time": 118.712,
+      "x": -720.546,
+      "y": 374.464,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.296,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.712,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 251,
+      "time": 119.312,
+      "x": -728.072,
+      "y": 446.07,
+      "angle": 96,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.6,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 29.312,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 252,
+      "time": 120.667,
+      "x": -644.532,
+      "y": 454.85,
+      "angle": 6,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 1.355,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 0.667,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 253,
+      "time": 121.054,
+      "x": -637.424,
+      "y": 387.224,
+      "angle": 276,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.054,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 254,
+      "time": 121.441,
+      "x": -699.545,
+      "y": 414.882,
+      "angle": 156,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.441,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 255,
+      "time": 121.828,
+      "x": -727.203,
+      "y": 352.761,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 1.828,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 256,
+      "time": 122.215,
+      "x": -655.597,
+      "y": 360.286,
+      "angle": 6,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 2.215,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 257,
+      "time": 122.602,
+      "x": -615.628,
+      "y": 305.273,
+      "angle": 306,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.602,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 258,
+      "time": 122.989,
+      "x": -587.97,
+      "y": 367.395,
+      "angle": 66,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 2.989,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 259,
+      "time": 123.377,
+      "x": -655.597,
+      "y": 360.286,
+      "angle": 186,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 3.377,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 260,
+      "time": 123.764,
+      "x": -613.277,
+      "y": 302.036,
+      "angle": 306,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 3.764,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 261,
+      "time": 124.151,
+      "x": -640.935,
+      "y": 239.916,
+      "angle": 246,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.151,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 262,
+      "time": 124.538,
+      "x": -680.904,
+      "y": 294.93,
+      "angle": 126,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.538,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 263,
+      "time": 124.925,
+      "x": -748.532,
+      "y": 287.821,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 4.925,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 264,
+      "time": 125.312,
+      "x": -790.852,
+      "y": 346.07,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 5.312,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 265,
+      "time": 125.699,
+      "x": -818.51,
+      "y": 283.95,
+      "angle": 246,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 5.699,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 266,
+      "time": 126.086,
+      "x": -750.883,
+      "y": 291.058,
+      "angle": 6,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.086,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 267,
+      "time": 126.473,
+      "x": -790.852,
+      "y": 346.07,
+      "angle": 126,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 6.473,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 268,
+      "time": 126.86,
+      "x": -761.567,
+      "y": 411.845,
+      "angle": 66,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 6.86,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 269,
+      "time": 127.247,
+      "x": -801.537,
+      "y": 466.858,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.247,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 270,
+      "time": 127.635,
+      "x": -773.879,
+      "y": 528.979,
+      "angle": 66,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 7.635,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 271,
+      "time": 128.022,
+      "x": -706.251,
+      "y": 536.088,
+      "angle": 6,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.022,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 272,
+      "time": 128.409,
+      "x": -764.5,
+      "y": 493.767,
+      "angle": 216,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 8.409,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 273,
+      "time": 128.796,
+      "x": -736.842,
+      "y": 555.889,
+      "angle": 66,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 8.796,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0417,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 274,
+      "time": 129.183,
+      "x": -804.47,
+      "y": 548.781,
+      "angle": 186,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.183,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 275,
+      "time": 129.57,
+      "x": -742.349,
+      "y": 521.122,
+      "angle": 336,
+      "turnDegrees": 150,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 9.57,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0417,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 276,
+      "time": 129.957,
+      "x": -800.598,
+      "y": 478.801,
+      "angle": 216,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 9.957,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 277,
+      "time": 130.344,
+      "x": -840.567,
+      "y": 533.814,
+      "angle": 126,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 10.344,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 278,
+      "time": 130.731,
+      "x": -785.554,
+      "y": 573.784,
+      "angle": 36,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 10.731,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 279,
+      "time": 131.118,
+      "x": -792.662,
+      "y": 641.411,
+      "angle": 96,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 11.118,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 280,
+      "time": 131.506,
+      "x": -750.342,
+      "y": 583.162,
+      "angle": 306,
+      "turnDegrees": -150,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 11.506,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0417,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 281,
+      "time": 131.893,
+      "x": -821.947,
+      "y": 575.637,
+      "angle": 186,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 11.893,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 282,
+      "time": 132.28,
+      "x": -849.605,
+      "y": 513.515,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 12.28,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 283,
+      "time": 132.667,
+      "x": -787.484,
+      "y": 485.858,
+      "angle": 336,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 12.667,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 284,
+      "time": 133.054,
+      "x": -845.733,
+      "y": 443.536,
+      "angle": 216,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 13.054,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0333,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 285,
+      "time": 133.441,
+      "x": -805.764,
+      "y": 388.523,
+      "angle": 306,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.441,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 286,
+      "time": 133.828,
+      "x": -860.777,
+      "y": 348.555,
+      "angle": 216,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 13.828,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 287,
+      "time": 134.215,
+      "x": -853.669,
+      "y": 280.926,
+      "angle": 276,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.215,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 288,
+      "time": 134.602,
+      "x": -925.275,
+      "y": 273.401,
+      "angle": 186,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 14.602,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 289,
+      "time": 134.989,
+      "x": -897.617,
+      "y": 335.522,
+      "angle": 66,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 14.989,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 290,
+      "time": 135.377,
+      "x": -937.586,
+      "y": 390.535,
+      "angle": 126,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.377,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 291,
+      "time": 135.764,
+      "x": -1005.214,
+      "y": 383.427,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 15.764,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 292,
+      "time": 136.151,
+      "x": -1047.534,
+      "y": 441.676,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 16.151,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": -0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 293,
+      "time": 136.538,
+      "x": -1115.162,
+      "y": 434.569,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 16.538,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 294,
+      "time": 136.925,
+      "x": -1142.82,
+      "y": 372.448,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 16.925,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 295,
+      "time": 137.312,
+      "x": -1210.447,
+      "y": 365.339,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 17.312,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 296,
+      "time": 137.699,
+      "x": -1239.732,
+      "y": 299.565,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 17.699,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0167,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 297,
+      "time": 138.086,
+      "x": -1307.36,
+      "y": 292.457,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.086,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 298,
+      "time": 138.473,
+      "x": -1314.468,
+      "y": 360.084,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.473,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 299,
+      "time": 138.86,
+      "x": -1376.589,
+      "y": 387.742,
+      "angle": 156,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 18.86,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 300,
+      "time": 139.247,
+      "x": -1405.874,
+      "y": 321.967,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 19.247,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.6
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 301,
+      "time": 139.635,
+      "x": -1445.843,
+      "y": 376.979,
+      "angle": 126,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 19.635,
+      "section": "final challenge phrase",
+      "visualIntensity": 1,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.18
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 302,
+      "time": 140.022,
+      "x": -1513.471,
+      "y": 369.872,
+      "angle": 186,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.022,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.11,
+        "rotation": 0.08,
+        "shake": 0.122
+      },
+      "checkpoint": true
+    },
+    {
+      "id": 303,
+      "time": 140.409,
+      "x": -1520.579,
+      "y": 437.499,
+      "angle": 96,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 20.409,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 304,
+      "time": 140.796,
+      "x": -1578.828,
+      "y": 395.179,
+      "angle": 216,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 20.796,
+      "section": "ending resolution",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 305,
+      "time": 141.183,
+      "x": -1585.936,
+      "y": 462.806,
+      "angle": 96,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.183,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 306,
+      "time": 141.57,
+      "x": -1653.563,
+      "y": 455.699,
+      "angle": 186,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.57,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 307,
+      "time": 141.957,
+      "x": -1693.533,
+      "y": 510.712,
+      "angle": 126,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 21.957,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 308,
+      "time": 142.344,
+      "x": -1722.818,
+      "y": 444.936,
+      "angle": 246,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 22.344,
+      "section": "ending resolution",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 309,
+      "time": 142.731,
+      "x": -1784.939,
+      "y": 472.594,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 22.731,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 310,
+      "time": 143.118,
+      "x": -1777.831,
+      "y": 404.967,
+      "angle": 276,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.118,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 311,
+      "time": 143.506,
+      "x": -1839.952,
+      "y": 432.624,
+      "angle": 156,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 23.506,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 312,
+      "time": 143.893,
+      "x": -1869.237,
+      "y": 366.849,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 23.893,
+      "section": "ending resolution",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 313,
+      "time": 144.28,
+      "x": -1936.864,
+      "y": 359.742,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 24.28,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 314,
+      "time": 144.667,
+      "x": -1964.523,
+      "y": 297.621,
+      "angle": 246,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 24.667,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 315,
+      "time": 145.054,
+      "x": -2026.644,
+      "y": 325.278,
+      "angle": 156,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.054,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 316,
+      "time": 145.441,
+      "x": -2019.118,
+      "y": 253.672,
+      "angle": 276,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 25.441,
+      "section": "ending resolution",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 317,
+      "time": 145.828,
+      "x": -2081.239,
+      "y": 281.332,
+      "angle": 156,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 25.828,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 318,
+      "time": 146.215,
+      "x": -2108.897,
+      "y": 219.209,
+      "angle": 246,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.215,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 319,
+      "time": 146.602,
+      "x": -2176.524,
+      "y": 212.102,
+      "angle": 186,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 26.602,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 320,
+      "time": 146.989,
+      "x": -2134.204,
+      "y": 153.853,
+      "angle": 306,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 26.989,
+      "section": "ending resolution",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.0333,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 321,
+      "time": 147.377,
+      "x": -2189.217,
+      "y": 113.883,
+      "angle": 216,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 27.377,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 322,
+      "time": 147.764,
+      "x": -2127.096,
+      "y": 86.225,
+      "angle": 336,
+      "turnDegrees": 120,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 27.764,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0333,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 323,
+      "time": 148.151,
+      "x": -2182.109,
+      "y": 46.255,
+      "angle": 216,
+      "turnDegrees": -120,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.151,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0333,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 324,
+      "time": 148.538,
+      "x": -2139.788,
+      "y": -11.993,
+      "angle": 306,
+      "turnDegrees": 90,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": true,
+      "sourceBeat": true,
+      "sourceTime": 28.538,
+      "section": "ending resolution",
+      "visualIntensity": 0.795,
+      "cameraCue": {
+        "zoom": 0.055,
+        "rotation": 0.025,
+        "shake": 0.477
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 325,
+      "time": 148.925,
+      "x": -2167.446,
+      "y": -74.115,
+      "angle": 246,
+      "turnDegrees": -60,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 28.925,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.0167,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 326,
+      "time": 149.312,
+      "x": -2127.477,
+      "y": -129.127,
+      "angle": 306,
+      "turnDegrees": 60,
+      "spin": 1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 29.312,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": 0.0167,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    },
+    {
+      "id": 327,
+      "time": 149.699,
+      "x": -2182.49,
+      "y": -169.096,
+      "angle": 216,
+      "turnDegrees": -90,
+      "spin": -1,
+      "interval": 0.387,
+      "accent": false,
+      "sourceBeat": true,
+      "sourceTime": 29.699,
+      "section": "ending resolution",
+      "visualIntensity": 0.675,
+      "cameraCue": {
+        "zoom": 0.015,
+        "rotation": -0.025,
+        "shake": 0.122
+      },
+      "checkpoint": false
+    }
+  ],
+  "debug": {
+    "generatedAt": "2026-06-12T23:21:29.625Z",
+    "generator": "scripts/generate-beatmaps.mjs",
+    "audioAnalysis": [
+      {
+        "file": "Iron_Lung.mp3",
+        "decodedDuration": 30.772,
+        "detectedBpm": 151,
+        "tempoChanges": [
+          {
+            "time": 0,
+            "bpm": 150,
+            "confidence": 5.952
+          },
+          {
+            "time": 15,
+            "bpm": 120,
+            "confidence": 7.491
+          }
+        ],
+        "strongestOnsets": [
+          {
+            "time": 10.133,
+            "strength": 0.506
+          },
+          {
+            "time": 10.763,
+            "strength": 0.588
+          },
+          {
+            "time": 11.136,
+            "strength": 0.506
+          },
+          {
+            "time": 11.509,
+            "strength": 0.89
+          },
+          {
+            "time": 13.013,
+            "strength": 0.631
+          },
+          {
+            "time": 14.507,
+            "strength": 0.649
+          },
+          {
+            "time": 14.763,
+            "strength": 0.449
+          },
+          {
+            "time": 15.136,
+            "strength": 0.475
+          },
+          {
+            "time": 16.011,
+            "strength": 0.981
+          },
+          {
+            "time": 16.256,
+            "strength": 0.563
+          },
+          {
+            "time": 17.131,
+            "strength": 0.441
+          },
+          {
+            "time": 18.133,
+            "strength": 0.662
+          },
+          {
+            "time": 18.635,
+            "strength": 0.633
+          },
+          {
+            "time": 19.136,
+            "strength": 0.598
+          },
+          {
+            "time": 21.013,
+            "strength": 0.792
+          },
+          {
+            "time": 21.515,
+            "strength": 0.857
+          },
+          {
+            "time": 21.76,
+            "strength": 0.474
+          },
+          {
+            "time": 23.136,
+            "strength": 0.596
+          },
+          {
+            "time": 23.637,
+            "strength": 0.543
+          },
+          {
+            "time": 24.256,
+            "strength": 0.552
+          },
+          {
+            "time": 27.008,
+            "strength": 0.724
+          },
+          {
+            "time": 27.52,
+            "strength": 0.584
+          },
+          {
+            "time": 27.765,
+            "strength": 0.513
+          },
+          {
+            "time": 29.013,
+            "strength": 0.812
+          }
+        ]
+      },
+      {
+        "file": "Iron_Teeth_Glass_Keys.mp3",
+        "decodedDuration": 30.772,
+        "detectedBpm": 140,
+        "tempoChanges": [
+          {
+            "time": 0,
+            "bpm": 140,
+            "confidence": 4.973
+          },
+          {
+            "time": 15,
+            "bpm": 149,
+            "confidence": 5.28
+          }
+        ],
+        "strongestOnsets": [
+          {
+            "time": 1.077,
+            "strength": 0.473
+          },
+          {
+            "time": 1.611,
+            "strength": 0.461
+          },
+          {
+            "time": 2.549,
+            "strength": 0.465
+          },
+          {
+            "time": 3.221,
+            "strength": 0.512
+          },
+          {
+            "time": 3.627,
+            "strength": 0.54
+          },
+          {
+            "time": 4.693,
+            "strength": 0.534
+          },
+          {
+            "time": 6.837,
+            "strength": 0.422
+          },
+          {
+            "time": 7.904,
+            "strength": 0.42
+          },
+          {
+            "time": 8.576,
+            "strength": 0.409
+          },
+          {
+            "time": 8.981,
+            "strength": 0.396
+          },
+          {
+            "time": 9.653,
+            "strength": 0.416
+          },
+          {
+            "time": 10.72,
+            "strength": 0.399
+          },
+          {
+            "time": 12.192,
+            "strength": 0.376
+          },
+          {
+            "time": 13.269,
+            "strength": 0.414
+          },
+          {
+            "time": 15.413,
+            "strength": 0.361
+          },
+          {
+            "time": 16.213,
+            "strength": 0.677
+          },
+          {
+            "time": 16.48,
+            "strength": 0.921
+          },
+          {
+            "time": 19.285,
+            "strength": 0.408
+          },
+          {
+            "time": 20.107,
+            "strength": 0.492
+          },
+          {
+            "time": 20.896,
+            "strength": 0.541
+          },
+          {
+            "time": 24.096,
+            "strength": 0.372
+          },
+          {
+            "time": 26.123,
+            "strength": 0.471
+          },
+          {
+            "time": 27.328,
+            "strength": 0.661
+          },
+          {
+            "time": 28.267,
+            "strength": 0.436
+          }
+        ]
+      },
+      {
+        "file": "Overclocked_Nerve.mp3",
+        "decodedDuration": 30.772,
+        "detectedBpm": 100,
+        "tempoChanges": [
+          {
+            "time": 0,
+            "bpm": 100,
+            "confidence": 8.676
+          },
+          {
+            "time": 15,
+            "bpm": 100,
+            "confidence": 10.793
+          }
+        ],
+        "strongestOnsets": [
+          {
+            "time": 1.707,
+            "strength": 0.717
+          },
+          {
+            "time": 3.509,
+            "strength": 0.693
+          },
+          {
+            "time": 6.955,
+            "strength": 0.801
+          },
+          {
+            "time": 7.104,
+            "strength": 0.728
+          },
+          {
+            "time": 8.907,
+            "strength": 0.827
+          },
+          {
+            "time": 10.709,
+            "strength": 0.812
+          },
+          {
+            "time": 12.501,
+            "strength": 0.623
+          },
+          {
+            "time": 13.109,
+            "strength": 0.665
+          },
+          {
+            "time": 13.707,
+            "strength": 0.996
+          },
+          {
+            "time": 14.912,
+            "strength": 0.591
+          },
+          {
+            "time": 16.107,
+            "strength": 0.712
+          },
+          {
+            "time": 16.555,
+            "strength": 0.697
+          },
+          {
+            "time": 17.909,
+            "strength": 0.582
+          },
+          {
+            "time": 18.507,
+            "strength": 1
+          },
+          {
+            "time": 20.309,
+            "strength": 0.622
+          },
+          {
+            "time": 20.907,
+            "strength": 0.694
+          },
+          {
+            "time": 22.101,
+            "strength": 0.598
+          },
+          {
+            "time": 23.307,
+            "strength": 0.919
+          },
+          {
+            "time": 25.707,
+            "strength": 0.768
+          },
+          {
+            "time": 26.901,
+            "strength": 0.609
+          },
+          {
+            "time": 27.509,
+            "strength": 0.767
+          },
+          {
+            "time": 28.107,
+            "strength": 0.907
+          },
+          {
+            "time": 28.405,
+            "strength": 0.59
+          },
+          {
+            "time": 29.909,
+            "strength": 0.742
+          }
+        ]
+      },
+      {
+        "file": "Sun_Drenched_Logic.mp3",
+        "decodedDuration": 30.772,
+        "detectedBpm": 100,
+        "tempoChanges": [
+          {
+            "time": 0,
+            "bpm": 146,
+            "confidence": 4.292
+          },
+          {
+            "time": 15,
+            "bpm": 100,
+            "confidence": 8.59
+          }
+        ],
+        "strongestOnsets": [
+          {
+            "time": 0.213,
+            "strength": 0.447
+          },
+          {
+            "time": 2.613,
+            "strength": 0.424
+          },
+          {
+            "time": 4.416,
+            "strength": 0.348
+          },
+          {
+            "time": 8.011,
+            "strength": 0.548
+          },
+          {
+            "time": 8.619,
+            "strength": 0.387
+          },
+          {
+            "time": 8.768,
+            "strength": 0.403
+          },
+          {
+            "time": 12.512,
+            "strength": 0.785
+          },
+          {
+            "time": 13.717,
+            "strength": 0.537
+          },
+          {
+            "time": 14.912,
+            "strength": 0.841
+          },
+          {
+            "time": 16.117,
+            "strength": 0.476
+          },
+          {
+            "time": 18.208,
+            "strength": 0.486
+          },
+          {
+            "time": 18.517,
+            "strength": 0.624
+          },
+          {
+            "time": 20.309,
+            "strength": 0.563
+          },
+          {
+            "time": 22.112,
+            "strength": 0.807
+          },
+          {
+            "time": 22.709,
+            "strength": 0.974
+          },
+          {
+            "time": 23.915,
+            "strength": 0.659
+          },
+          {
+            "time": 24.213,
+            "strength": 0.426
+          },
+          {
+            "time": 24.512,
+            "strength": 0.899
+          },
+          {
+            "time": 25.717,
+            "strength": 0.543
+          },
+          {
+            "time": 26.315,
+            "strength": 0.616
+          },
+          {
+            "time": 27.509,
+            "strength": 1
+          },
+          {
+            "time": 28.117,
+            "strength": 0.838
+          },
+          {
+            "time": 28.416,
+            "strength": 0.387
+          },
+          {
+            "time": 29.312,
+            "strength": 0.677
+          }
+        ]
+      },
+      {
+        "file": "Synchronized_Glide.mp3",
+        "decodedDuration": 30.772,
+        "detectedBpm": 155,
+        "tempoChanges": [
+          {
+            "time": 0,
+            "bpm": 154,
+            "confidence": 4.841
+          },
+          {
+            "time": 15,
+            "bpm": 133,
+            "confidence": 4.137
+          }
+        ],
+        "strongestOnsets": [
+          {
+            "time": 0.032,
+            "strength": 0.279
+          },
+          {
+            "time": 1.408,
+            "strength": 0.29
+          },
+          {
+            "time": 5.312,
+            "strength": 0.285
+          },
+          {
+            "time": 6.059,
+            "strength": 0.459
+          },
+          {
+            "time": 6.507,
+            "strength": 0.444
+          },
+          {
+            "time": 8.011,
+            "strength": 0.377
+          },
+          {
+            "time": 8.459,
+            "strength": 0.323
+          },
+          {
+            "time": 8.757,
+            "strength": 0.568
+          },
+          {
+            "time": 8.907,
+            "strength": 0.503
+          },
+          {
+            "time": 9.205,
+            "strength": 0.63
+          },
+          {
+            "time": 9.515,
+            "strength": 0.473
+          },
+          {
+            "time": 10.859,
+            "strength": 0.298
+          },
+          {
+            "time": 11.008,
+            "strength": 0.291
+          },
+          {
+            "time": 11.904,
+            "strength": 0.745
+          },
+          {
+            "time": 17.312,
+            "strength": 0.639
+          },
+          {
+            "time": 19.403,
+            "strength": 0.352
+          },
+          {
+            "time": 24.203,
+            "strength": 0.445
+          },
+          {
+            "time": 25.408,
+            "strength": 0.328
+          },
+          {
+            "time": 26.304,
+            "strength": 0.709
+          },
+          {
+            "time": 27.648,
+            "strength": 0.298
+          },
+          {
+            "time": 27.808,
+            "strength": 0.602
+          },
+          {
+            "time": 27.957,
+            "strength": 0.428
+          },
+          {
+            "time": 28.107,
+            "strength": 0.821
+          },
+          {
+            "time": 29.312,
+            "strength": 0.716
+          }
+        ]
+      }
+    ]
+  }
+}
