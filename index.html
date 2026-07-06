@@ -15,6 +15,11 @@
           <div class="brand-lockup">
             <p class="eyebrow">Cosmic orbit rhythm</p>
             <h1 id="gameTitle">BeatPress</h1>
+            <div class="account-bar">
+              <span id="accountStatus" class="account-status">Guest</span>
+              <button id="accountLoginButton" type="button" class="account-button">Log in / Sign up</button>
+              <button id="accountLogoutButton" type="button" class="account-button is-hidden">Log out</button>
+            </div>
           </div>
           <div id="levelCards" class="level-grid" aria-label="Level select"></div>
           <div class="settings-strip" aria-label="Gameplay settings">
@@ -119,6 +124,45 @@
           </div>
         </div>
       </section>
+
+      <div id="authOverlay" class="auth-overlay is-hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+        <div class="auth-card">
+          <button id="authCloseButton" class="auth-close" type="button" aria-label="Close">×</button>
+          <p class="eyebrow">BeatPress account</p>
+          <h2 id="authTitle">Log in</h2>
+
+          <form id="loginForm" class="auth-form">
+            <label class="auth-field"><span>Username</span>
+              <input id="loginUser" type="text" autocomplete="username" /></label>
+            <label class="auth-field"><span>Password</span>
+              <input id="loginPass" type="password" autocomplete="current-password" /></label>
+            <button type="submit" class="auth-primary">Log in</button>
+            <p class="auth-switch">No account yet?
+              <button type="button" id="toSignupButton" class="auth-link">Sign up</button></p>
+          </form>
+
+          <form id="signupForm" class="auth-form is-hidden">
+            <label class="auth-field"><span>Username</span>
+              <input id="signupUser" type="text" autocomplete="username" /></label>
+            <label class="auth-field"><span>Password</span>
+              <input id="signupPass" type="password" autocomplete="new-password" /></label>
+            <button type="submit" class="auth-primary">Continue</button>
+            <p class="auth-switch">Already have an account?
+              <button type="button" id="toLoginButton" class="auth-link">Log in</button></p>
+          </form>
+
+          <form id="displayNameForm" class="auth-form is-hidden">
+            <p class="auth-hint">Pick a display name for the global leaderboards. It has to be unique.</p>
+            <label class="auth-field"><span>Display name</span>
+              <input id="signupDisplay" type="text" maxlength="24" autocomplete="off" /></label>
+            <button type="submit" class="auth-primary">Create account</button>
+            <p class="auth-switch">
+              <button type="button" id="backToSignupButton" class="auth-link">Back</button></p>
+          </form>
+
+          <p id="authError" class="auth-error" role="alert"></p>
+        </div>
+      </div>
 
       <div id="countdownOverlay" class="countdown-overlay is-hidden" aria-live="polite" aria-label="Start countdown">
         <span id="countdownNumber" class="countdown-number">1</span>

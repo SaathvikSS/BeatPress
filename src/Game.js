@@ -1,4 +1,6 @@
+import { Account } from "./Account.js";
 import { AudioManager } from "./AudioManager.js";
+import { AuthUI } from "./AuthUI.js";
 import { BeatmapLoader } from "./BeatmapLoader.js";
 import { CameraController } from "./CameraController.js";
 import { DebugOverlay } from "./DebugOverlay.js";
@@ -60,6 +62,8 @@ export class Game {
     this.player = new PlayerOrbitController(this.effects);
     this.input = new InputManager((event) => this.handleAnyKey(event));
     this.leaderboard = new Leaderboard();
+    this.account = new Account();
+    this.authUI = new AuthUI(this.account);
     this.results = new ResultsScreen({
       kicker: document.getElementById("resultsKicker"),
       title: document.getElementById("resultsTitle"),
@@ -74,7 +78,12 @@ export class Game {
       document.getElementById("levelCards"),
       this.store,
       (level) => this.loadLevel(level),
+      this.account,
     );
+    // Re-render cards (best acc / tries / leaderboard) whenever auth changes.
+    this.account.onChange(() => {
+      if (this.state === "menu") this.levelSelect.render(LEVELS);
+    });
 
     this.views = {
       menu: document.getElementById("menuView"),
@@ -251,6 +260,7 @@ export class Game {
       return;
     }
     if (this.state === "ready" && this.beatmap) {
+      this.#countTry();
       await this.#startPlayback(0);
       return;
     }
@@ -293,6 +303,7 @@ export class Game {
     // Retry is the explicit "back to the very beginning" escape hatch: it
     // drops any FreePlay respawn anchor the player had chosen.
     if (fromBeginning) this.freeplaySpawnIndex = -1;
+    if (fromBeginning) this.#countTry();
     const startNode = fromBeginning ? 0 : this.#checkpointForTime(this.audio.getTime()).nodeIndex;
     this.#resetRunState(startNode);
     await this.#startPlayback(this.beatmap.nodes[startNode].time, true);
@@ -535,6 +546,8 @@ export class Game {
     if (this.autoRetryTimer) window.clearTimeout(this.autoRetryTimer);
     this.autoRetryTimer = window.setTimeout(async () => {
       const startNode = Math.max(0, Math.min(nodeIndex, this.beatmap.nodes.length - 1));
+      // A death that sends the player back to the very start is a new try.
+      if (startNode === 0) this.#countTry();
       this.#resetRunState(startNode, true);
       await this.#startPlayback(this.beatmap.nodes[startNode].time, true);
     }, delayMs);
@@ -603,6 +616,14 @@ export class Game {
     return token === this.countdownToken && this.state === "countdown";
   }
 
+  // One attempt = one fresh run from the start of the level. Counted locally
+  // (guests) and on the account's cloud progress (when logged in).
+  #countTry() {
+    if (!this.currentLevel || this.currentLevel.mode === "spam-test") return;
+    this.store.bumpTries(this.currentLevel.id);
+    this.account.recordTry(this.currentLevel.id);
+  }
+
   #checkpointForTime(time) {
     const checkpoints = this.beatmap.checkpoints || [{ nodeIndex: 0, time: 0 }];
     let selected = checkpoints[0];
@@ -631,6 +652,7 @@ export class Game {
         this.#syncLeaderboard(result, false);
       } else {
         this.store.saveResult(this.currentLevel.id, result);
+        this.account.recordResult(this.currentLevel.id, result);
         this.#syncLeaderboard(result);
       }
     }
@@ -691,6 +713,7 @@ export class Game {
     this.offsetGhosts = this.offsetGhosts.filter((ghost) => ghost.life > 0);
     this.camera.setReduceMotion(this.settings.reduceCamera);
     this.visualDirector.setReduceMotion(this.settings.reduceCamera);
+    this.shader.setReduceMotion(this.settings.reduceCamera);
     this.visualDirector.update(dt, audioTime, this.player.anchorIndex, this.audioLevel);
     this.camera.update(dt, audioTime, this.audioLevel, this.player.anchorIndex, this.#previewNodes(this.player.anchorIndex, 6));
     this.shader.update(dt, this.stats.combo, this.audioLevel);
@@ -744,6 +767,8 @@ export class Game {
 
     this.visualDirector.drawForeground(ctx, canvas, this.camera);
     this.effects.drawScreen(ctx, canvas);
+    // Bloom the whole composited scene before crisp UI overlays go on top.
+    this.shader.applyBloom(ctx, canvas, this.audioLevel);
     if ((this.state === "playing" || this.state === "crashing") && !SPAM_MODES.has(this.beatmap?.mode)) {
       this.#drawCalibrationMeter(ctx, canvas);
     }

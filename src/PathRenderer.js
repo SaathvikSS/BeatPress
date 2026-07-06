@@ -321,11 +321,19 @@ export class PathRenderer {
       ctx.strokeStyle = fill;
       this._strokeSegment(ctx, seg, TRACK_WIDTH);
 
-      // Soft sheen down the middle for a lit-from-above feel.
+      // Glossy 3D rail: a bright additive neon core plus a hot white sheen
+      // streak down the middle, so tiles read as lit glass and bloom nicely.
       if (state !== "past") {
-        ctx.globalAlpha = 0.3 * fade;
+        ctx.save();
+        ctx.globalCompositeOperation = "lighter";
+        ctx.globalAlpha = 0.2 * fade;
+        ctx.strokeStyle = fill;
+        this._strokeSegment(ctx, seg, TRACK_WIDTH * 0.72);
+        ctx.restore();
+
+        ctx.globalAlpha = 0.32 * fade;
         ctx.strokeStyle = pal.sheen;
-        this._strokeSegment(ctx, seg, TRACK_WIDTH * 0.42);
+        this._strokeSegment(ctx, seg, TRACK_WIDTH * 0.34);
       }
 
       // Target pulse: the next tile breathes.

@@ -34,15 +34,31 @@ export class Store {
     return bests[levelId] || null;
   }
 
+  // Local number of attempts for a level (guest / offline fallback).
+  getTries(levelId) {
+    const bests = this.#read(BESTS_KEY, {});
+    return bests[levelId]?.tries || 0;
+  }
+
+  bumpTries(levelId) {
+    const bests = this.#read(BESTS_KEY, {});
+    const record = bests[levelId] || {};
+    record.tries = (record.tries || 0) + 1;
+    bests[levelId] = record;
+    this.storage.setItem(BESTS_KEY, JSON.stringify(bests));
+    return record.tries;
+  }
+
   saveResult(levelId, result) {
     const bests = this.#read(BESTS_KEY, {});
-    const previous = bests[levelId];
+    const previous = bests[levelId] || {};
     const isBetter =
-      !previous ||
+      previous.accuracy == null ||
       result.accuracy > previous.accuracy ||
-      (result.accuracy === previous.accuracy && result.maxCombo > previous.maxCombo);
+      (result.accuracy === previous.accuracy && result.maxCombo > (previous.maxCombo || 0));
     if (isBetter) {
       bests[levelId] = {
+        ...previous,
         accuracy: result.accuracy,
         maxCombo: result.maxCombo,
         grade: result.grade,

@@ -29,12 +29,33 @@ const root = resolve(process.cwd());
 const distDir = join(root, "beatmaps", "dist");
 
 // ---------------------------------------------------------------------------
-// Harvest per-track beat metadata from the original analysis output.
-// level1 + level2 dist files jointly cover all ten tracks.
+// Per-track beat metadata comes from scripts/analyze-tracks.mjs, which runs the
+// real audio through the Web Audio API to detect tempo, beat phase, and note
+// onsets. It is stored in beatmaps/track-meta.json (all songs). Falls back to
+// harvesting the older dist beatmaps if that file is missing.
 // ---------------------------------------------------------------------------
+
+const trackMetaPath = join(root, "beatmaps", "track-meta.json");
 
 function harvestTrackMeta() {
   const meta = new Map();
+  try {
+    const parsed = JSON.parse(readFileSync(trackMetaPath, "utf8"));
+    for (const [file, m] of Object.entries(parsed)) {
+      if (!Number.isFinite(m.beatInterval)) continue;
+      meta.set(file, {
+        file,
+        detectedBpm: m.detectedBpm,
+        beatInterval: m.beatInterval,
+        firstBeatPhase: m.firstBeatPhase,
+        onsetCount: m.onsetCount || (m.onsets ? m.onsets.length : 0),
+        onsets: Array.isArray(m.onsets) ? m.onsets : [],
+      });
+    }
+    if (meta.size) return meta;
+  } catch {
+    // Fall back to the legacy harvest below.
+  }
   for (const file of ["level1.beatstar.json", "level2.beatstar.json", "level3.beatstar.json"]) {
     let parsed;
     try {
@@ -50,6 +71,7 @@ function harvestTrackMeta() {
           beatInterval: segment.beatInterval,
           firstBeatPhase: segment.firstBeatPhase,
           onsetCount: segment.onsetCount || 0,
+          onsets: [],
         });
       }
     }
@@ -170,7 +192,60 @@ const TRACKS = {
   overclocked: "Overclocked_Nerve.mp3",
   sunLogic: "Sun_Drenched_Logic.mp3",
   syncGlide: "Synchronized_Glide.mp3",
+  // Ten new AI-generated tracks.
+  violentGrace: "A_Violent_Grace.mp3",
+  coldGeometry: "Cold_Geometry.mp3",
+  gameOverNoon: "Game_Over_at_Noon.mp3",
+  gearsGrind: "Gears_Grind_Teeth.mp3",
+  highAltitude: "High_Altitude_Glide.mp3",
+  middayHighway: "Midday_Highway.mp3",
+  pendulumError: "Pendulum_Error.mp3",
+  sugarRush: "Sugar_Rush_Mode.mp3",
+  feltRain: "The_Felt_Against_the_Rain.mp3",
+  ironMandate: "The_Iron_Mandate.mp3",
 };
+const ALL_TRACKS = Object.values(TRACKS);
+
+// Reusable choreography for the "impossible" tier (levels 14-23). A huge fixed
+// subdivision means the per-level `minInterval` alone governs speed: every spam
+// block runs flat-out at minInterval, broken by brief wave breathers. Pass the
+// four patterns to cycle for visual variety.
+const SPAM_S = 240;
+// One long continuous spam block per section (a short wave breather leads each
+// so there is a readable slow beat) so the section fills solid at minInterval
+// rather than short bursts separated by beat-snap gaps. `FILL` is a step count
+// large enough to run until the section ends at any speed.
+const FILL = 40000;
+function spamChoreo(patterns) {
+  const P = (i) => patterns[i % patterns.length];
+  const s = SPAM_S;
+  return [
+    [
+      { p: "wave", s: 1, n: 6 },
+      { p: P(0), s, n: FILL, cue: "zoomOutDrop" },
+    ],
+    [
+      { p: "wave", s: 0.5, n: 3 },
+      { p: P(1), s, n: FILL, cue: "rollRight" },
+    ],
+    [
+      { p: "wave", s: 0.5, n: 3 },
+      { p: P(2), s, n: FILL, pow: true, cue: "twistHeavy" },
+    ],
+    [
+      { p: "wave", s: 0.5, n: 3 },
+      { p: P(3), s, n: FILL, cue: "zoomOutDrop" },
+    ],
+    [
+      { p: "wave", s: 0.5, n: 3 },
+      { p: P(0), s, n: FILL, pow: true, cue: "rollLeft" },
+    ],
+    [
+      { p: "wave", s: 1, n: 6, cue: "zoomInHit" },
+      { p: "straight", s: 0.5, n: 4 },
+    ],
+  ];
+}
 
 const LEVELS = [
   {
@@ -737,7 +812,7 @@ const LEVELS = [
     difficulty: "Ultra Spam",
     ultra: true,
     minInterval: 0.057,
-    files: [TRACKS.ironTeeth, TRACKS.sunLogic, TRACKS.breakneck, TRACKS.clockwork, TRACKS.overclocked],
+    files: [TRACKS.ironTeeth, TRACKS.gravLocked, TRACKS.breakneck, TRACKS.clockwork, TRACKS.overclocked],
     startHeading: -12,
     theme: {
       name: "Star Cascade",
@@ -923,7 +998,7 @@ const LEVELS = [
     difficulty: "Omega Spam",
     ultra: true,
     minInterval: 0.046,
-    files: [TRACKS.overclocked, TRACKS.breakneck, TRACKS.ironTeeth, TRACKS.clockwork, TRACKS.sunLogic],
+    files: [TRACKS.overclocked, TRACKS.breakneck, TRACKS.ironTeeth, TRACKS.clockwork, TRACKS.concrete],
     startHeading: -60,
     theme: {
       name: "Singularity",
@@ -978,6 +1053,297 @@ const LEVELS = [
       ],
     ],
   },
+  // ---- Impossible tier: levels 14-23, ramping ~5x -> ~20x past level 13 ----
+  {
+    id: "level14",
+    title: "Meltdown",
+    subtitle: "Hyper spam reactor breach",
+    difficulty: "Hyper Spam",
+    ultra: true,
+    minInterval: 0.0092,
+    files: [TRACKS.syncGlide, TRACKS.clockwork, TRACKS.overclocked, TRACKS.breakneck, TRACKS.ironLung],
+    startHeading: -20,
+    theme: {
+      name: "Meltdown",
+      backgroundMode: "crystalOrbit",
+      primaryColor: "#4FFFEF",
+      secondaryColor: "#A855F7",
+      accentColor: "#FFDD00",
+      particleStyle: "sparks",
+      shipStyle: "angular",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "~5x past the old ceiling: a crystalline wall of tiles meant for No-Death sightseeing",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "shattering crystal lattice at reactor-breach speed",
+      cameraPersonality: "hard strobing zooms",
+      readabilityRisks: ["impossible tier; enable No Death and watch the show"],
+    },
+    choreo: spamChoreo(["zigzag", "sunburst", "switchback", "stairs"]),
+  },
+  {
+    id: "level15",
+    title: "Overdrive",
+    subtitle: "Turbo spam solar sprint",
+    difficulty: "Turbo Spam",
+    ultra: true,
+    minInterval: 0.0079,
+    files: [TRACKS.gravLocked, TRACKS.sunLogic, TRACKS.concrete, TRACKS.ironTeeth, TRACKS.gravLock],
+    startHeading: 40,
+    theme: {
+      name: "Overdrive",
+      backgroundMode: "solarFlare",
+      primaryColor: "#FF6B35",
+      secondaryColor: "#FFDD00",
+      accentColor: "#FF4FCB",
+      particleStyle: "embers",
+      shipStyle: "angular",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "solar corridors and spokes flooding by faster than the eye can track",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "a sun flaring at overdrive speed",
+      cameraPersonality: "sweeping flare rolls",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["straight", "spiral", "orbitRing", "zigzag"]),
+  },
+  {
+    id: "level16",
+    title: "Detonator",
+    subtitle: "Nitro spam circuit overload",
+    difficulty: "Nitro Spam",
+    ultra: true,
+    minInterval: 0.0068,
+    files: [TRACKS.overclocked, TRACKS.ironTeeth, TRACKS.breakneck, TRACKS.gravLock, TRACKS.clockwork],
+    startHeading: -70,
+    theme: {
+      name: "Detonator",
+      backgroundMode: "neonCircuit",
+      primaryColor: "#39FF14",
+      secondaryColor: "#4FFFEF",
+      accentColor: "#FF4FCB",
+      particleStyle: "comets",
+      shipStyle: "angular",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "coiling circuit traces detonating at nitro speed",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "a circuit board overloading to failure",
+      cameraPersonality: "spiral-locked rolls",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["coil", "helix", "straight", "spiral"]),
+  },
+  {
+    id: "level17",
+    title: "Cataclysm",
+    subtitle: "Plasma spam void tear",
+    difficulty: "Plasma Spam",
+    ultra: true,
+    minInterval: 0.0058,
+    files: [TRACKS.ironLung, TRACKS.concrete, TRACKS.sunLogic, TRACKS.gravLocked, TRACKS.breakneck],
+    startHeading: 120,
+    theme: {
+      name: "Cataclysm",
+      backgroundMode: "voidWalker",
+      primaryColor: "#A855F7",
+      secondaryColor: "#FF4FCB",
+      accentColor: "#4FFFEF",
+      particleStyle: "pixelDust",
+      shipStyle: "crescent",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "a void that swallows tiles faster than they can be read",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "glitch tears ripping the void apart",
+      cameraPersonality: "heavy twist drops",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["sunburst", "straight", "orbitRing", "zigzag"]),
+  },
+  {
+    id: "level18",
+    title: "Annihilator",
+    subtitle: "Quantum spam meteor storm",
+    difficulty: "Quantum Spam",
+    ultra: true,
+    minInterval: 0.005,
+    files: [TRACKS.clockwork, TRACKS.overclocked, TRACKS.gravLock, TRACKS.ironTeeth, TRACKS.syncGlide],
+    startHeading: -150,
+    theme: {
+      name: "Annihilator",
+      backgroundMode: "starfallRush",
+      primaryColor: "#FF4FCB",
+      secondaryColor: "#FFDD00",
+      accentColor: "#39FF14",
+      particleStyle: "sparks",
+      shipStyle: "droneSwarm",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "a meteor storm of tiles at quantum density",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "endless firework meteor bombardment",
+      cameraPersonality: "beat-strobed zooms",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["spiral", "coil", "helix", "straight"]),
+  },
+  {
+    id: "level19",
+    title: "Supernova",
+    subtitle: "Nova spam prism blast",
+    difficulty: "Nova Spam",
+    ultra: true,
+    minInterval: 0.0043,
+    files: [TRACKS.breakneck, TRACKS.sunLogic, TRACKS.ironLung, TRACKS.concrete, TRACKS.overclocked],
+    startHeading: 15,
+    theme: {
+      name: "Supernova",
+      backgroundMode: "prismCascade",
+      primaryColor: "#FFDD00",
+      secondaryColor: "#FF4FCB",
+      accentColor: "#4FFFEF",
+      particleStyle: "pixelDust",
+      shipStyle: "droneSwarm",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "a prism supernova scattering more tiles than pixels",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "light shattering into a rainbow supernova",
+      cameraPersonality: "wide strobe sprints",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["straight", "sunburst", "orbitRing", "switchback"]),
+  },
+  {
+    id: "level20",
+    title: "Event Horizon",
+    subtitle: "Quasar spam helix tower",
+    difficulty: "Quasar Spam",
+    ultra: true,
+    minInterval: 0.0037,
+    files: [TRACKS.ironTeeth, TRACKS.gravLocked, TRACKS.clockwork, TRACKS.breakneck, TRACKS.gravLock],
+    startHeading: -45,
+    theme: {
+      name: "Event Horizon",
+      backgroundMode: "helixTower",
+      primaryColor: "#A855F7",
+      secondaryColor: "#4FFFEF",
+      accentColor: "#FF6B35",
+      particleStyle: "comets",
+      shipStyle: "droneSwarm",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "a DNA tower spun so fast it becomes a solid ribbon of tiles",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "a helix tower blurring into a light column",
+      cameraPersonality: "continuous rolling climb",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["helix", "spiral", "coil", "orbitRing"]),
+  },
+  {
+    id: "level21",
+    title: "Oblivion",
+    subtitle: "Pulsar spam hyperdrive",
+    difficulty: "Pulsar Spam",
+    ultra: true,
+    minInterval: 0.0031,
+    files: [TRACKS.overclocked, TRACKS.syncGlide, TRACKS.sunLogic, TRACKS.ironLung, TRACKS.clockwork],
+    startHeading: 75,
+    theme: {
+      name: "Oblivion",
+      backgroundMode: "hyperTunnel",
+      primaryColor: "#4FFFEF",
+      secondaryColor: "#A855F7",
+      accentColor: "#FFDD00",
+      particleStyle: "pixelDust",
+      shipStyle: "droneSwarm",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "a hyperspace tube collapsing at pulsar speed",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "a warp tunnel at the edge of light",
+      cameraPersonality: "locked forward strobe",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["straight", "zigzag", "helix", "spiral"]),
+  },
+  {
+    id: "level22",
+    title: "Ragnarok",
+    subtitle: "Cosmic spam magma dive",
+    difficulty: "Cosmic Spam",
+    ultra: true,
+    minInterval: 0.0027,
+    files: [TRACKS.gravLock, TRACKS.concrete, TRACKS.breakneck, TRACKS.ironTeeth, TRACKS.overclocked],
+    startHeading: -100,
+    theme: {
+      name: "Ragnarok",
+      backgroundMode: "magmaCore",
+      primaryColor: "#FF6B35",
+      secondaryColor: "#FFDD00",
+      accentColor: "#FF4FCB",
+      particleStyle: "embers",
+      shipStyle: "angular",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "a magma core erupting a near-continuous stream of tiles",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "a volcanic core at cosmic overload",
+      cameraPersonality: "eruption shakes",
+      readabilityRisks: ["pure spectacle tier"],
+    },
+    choreo: spamChoreo(["switchback", "sunburst", "straight", "stairs"]),
+  },
+  {
+    id: "level23",
+    title: "Heat Death",
+    subtitle: "The final ~20x singularity",
+    difficulty: "Heat Death",
+    ultra: true,
+    minInterval: 0.0023,
+    files: [TRACKS.breakneck, TRACKS.overclocked, TRACKS.ironTeeth, TRACKS.syncGlide, TRACKS.sunLogic],
+    startHeading: -30,
+    theme: {
+      name: "Heat Death",
+      backgroundMode: "singularity",
+      primaryColor: "#A855F7",
+      secondaryColor: "#FF4FCB",
+      accentColor: "#4FFFEF",
+      particleStyle: "pixelDust",
+      shipStyle: "crescent",
+      cameraIntensity: 1,
+      backgroundIntensity: 1,
+    },
+    designNotes: {
+      mainRhythmMotif: "~20x the old ceiling: the fastest rail that can exist, a solid wall of tiles into a black hole",
+      denseSections: ["first complexity increase", "call-and-response pattern", "visual highlight section", "final challenge phrase"],
+      visualTheme: "the heat death of the universe around an event horizon",
+      cameraPersonality: "gravity-well lensing",
+      readabilityRisks: ["the ultimate No-Death spectacle"],
+    },
+    choreo: spamChoreo(["straight", "spiral", "coil", "orbitRing"]),
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1011,6 +1377,30 @@ function makeBeatClock(segments) {
 // ---------------------------------------------------------------------------
 // Node generation.
 // ---------------------------------------------------------------------------
+
+// Is time `local` (seconds into a 30s segment) within `tol` of a detected note
+// onset? Binary search over the sorted onset list. Returns the onset strength
+// (0 if none) so tiles can accent proportionally to the music.
+function onsetStrengthAt(onsets, local, tol = 0.05) {
+  if (!onsets || !onsets.length) return 0;
+  let lo = 0;
+  let hi = onsets.length - 1;
+  let best = 0;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    const t = onsets[mid][0];
+    if (Math.abs(t - local) <= tol) {
+      best = Math.max(best, onsets[mid][1] || 0.5);
+      // Check immediate neighbours too (onsets can cluster).
+      for (let k = mid - 1; k >= 0 && local - onsets[k][0] <= tol; k -= 1) best = Math.max(best, onsets[k][1] || 0.5);
+      for (let k = mid + 1; k < onsets.length && onsets[k][0] - local <= tol; k += 1) best = Math.max(best, onsets[k][1] || 0.5);
+      return best;
+    }
+    if (t < local) lo = mid + 1;
+    else hi = mid - 1;
+  }
+  return 0;
+}
 
 function buildNodes(level, trackMeta) {
   const segments = level.files.map((file) => trackMeta.get(file));
@@ -1053,9 +1443,14 @@ function buildNodes(level, trackMeta) {
     const seg = clock.segmentAt(time);
     const localBeat = (time - seg.start - seg.firstBeatPhase) / seg.beatInterval;
     const sourceBeat = Math.abs(localBeat - Math.round(localBeat)) < 0.02;
+    // Match the actual music: tiles landing on a detected note onset get
+    // accented (purely cosmetic/camera — never changes spacing or timing, so
+    // the difficulty is untouched).
+    const onset = onsetStrengthAt(seg.onsets, time - seg.start);
+    const accent = Boolean(extra.accent) || onset > 0.55;
     const intensity = Math.min(
       1,
-      sectionIntensity(time) + (extra.accent ? 0.14 : 0) + ((extra.sub || 1) >= 2 ? 0.1 : 0),
+      sectionIntensity(time) + (accent ? 0.14 : 0) + onset * 0.1 + ((extra.sub || 1) >= 2 ? 0.1 : 0),
     );
     nodes.push({
       id: nodes.length,
@@ -1066,7 +1461,9 @@ function buildNodes(level, trackMeta) {
       turnDegrees: turn,
       spin,
       interval: Number(interval.toFixed(3)),
-      accent: Boolean(extra.accent),
+      accent,
+      onBeat: sourceBeat,
+      onNote: onset > 0.55,
       sourceBeat,
       sourceTime: Number((time - seg.start).toFixed(3)),
       section: sectionFor(time),
@@ -1083,7 +1480,10 @@ function buildNodes(level, trackMeta) {
     const options = [0, 45, -45, 90, -90, 135, -135];
     const preferred = [0, 45, -45, 90, -90][Math.floor(random() * 5)];
     const ordered = [preferred, ...options.filter((o) => o !== preferred)];
-    const old = nodes.slice(0, Math.max(0, nodes.length - 12));
+    // Only probe a recent window of prior nodes. Bounds build cost on the
+    // huge impossible-tier levels (tens of thousands of nodes) and is
+    // effectively identical for the smaller levels.
+    const old = nodes.slice(Math.max(0, nodes.length - 600), Math.max(0, nodes.length - 12));
     for (const candidate of ordered) {
       const probeHeading = ((heading + candidate) * Math.PI) / 180;
       let clear = true;
@@ -1405,8 +1805,69 @@ function buildBeatmap(level, levelIndex, trackMeta) {
   };
 }
 
+// Assign a maximally-mixed set of 5 songs to every level, over all 20 tracks:
+//  - no song repeats inside a level,
+//  - every level's ordered sequence is unique (no repeated tune order),
+//  - every level's unordered set is unique,
+//  - usage is spread evenly across all 20 songs,
+//  - consecutive levels overlap as little as possible,
+//  - a gentle tempo gradient (slower songs early, faster later) so the
+//    existing difficulty ramp is preserved / reinforced.
+function assignSongs(levels, trackMeta) {
+  const tracks = ALL_TRACKS.filter((f) => trackMeta.has(f));
+  const bpm = (f) => trackMeta.get(f)?.detectedBpm || 120;
+  const rng = mulberry32(hashSeed("beatpress-songmix-v2"));
+  const usage = new Map(tracks.map((t) => [t, 0]));
+  const usedTuples = new Set();
+  const usedSets = new Set();
+  let prev = new Set();
+
+  for (let li = 0; li < levels.length; li += 1) {
+    const frac = levels.length > 1 ? li / (levels.length - 1) : 0;
+    // Center on the songs' faster range so even level 1 keeps a healthy tile
+    // density; the gradient still trends up so difficulty ramps.
+    const targetBpm = 128 + frac * 26; // ~128 BPM at level 1 -> ~154 at the end
+    let chosen = null;
+    for (let attempt = 0; attempt < 1500 && !chosen; attempt += 1) {
+      const jitter = 0.4 + attempt * 0.02;
+      const scored = tracks
+        .map((t) => [
+          t,
+          usage.get(t) * 1.5 +
+            (prev.has(t) ? 2.0 : 0) +
+            Math.abs(bpm(t) - targetBpm) / 22 +
+            rng() * jitter,
+        ])
+        .sort((a, b) => a[1] - b[1]);
+      const pick = scored.slice(0, 5).map((x) => x[0]);
+      for (let i = pick.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(rng() * (i + 1));
+        [pick[i], pick[j]] = [pick[j], pick[i]];
+      }
+      const tupleKey = pick.join("|");
+      const setKey = [...pick].sort().join("|");
+      if (usedTuples.has(tupleKey)) continue;
+      if (usedSets.has(setKey) && attempt < 1200) continue; // only reuse a set if truly stuck
+      chosen = { pick, tupleKey, setKey };
+    }
+    if (!chosen) {
+      const pick = [...tracks].sort(() => rng() - 0.5).slice(0, 5);
+      chosen = { pick, tupleKey: pick.join("|"), setKey: [...pick].sort().join("|") };
+    }
+    levels[li].files = chosen.pick;
+    usedTuples.add(chosen.tupleKey);
+    usedSets.add(chosen.setKey);
+    chosen.pick.forEach((t) => usage.set(t, usage.get(t) + 1));
+    prev = new Set(chosen.pick);
+  }
+  return usage;
+}
+
 function main() {
   const trackMeta = harvestTrackMeta();
+  // Re-mix every level's songs across the full 20-track pool.
+  assignSongs(LEVELS, trackMeta);
+
   const missing = [];
   for (const level of LEVELS) {
     for (const file of level.files) if (!trackMeta.has(file)) missing.push(file);
@@ -1419,7 +1880,10 @@ function main() {
   LEVELS.forEach((level, index) => {
     const beatmap = buildBeatmap(level, index, trackMeta);
     const outPath = join(distDir, `${level.id}.beatstar.json`);
-    writeFileSync(outPath, `${JSON.stringify(beatmap, null, 2)}\n`, "utf8");
+    // Minify the giant impossible-tier beatmaps to keep file sizes sane; keep
+    // the smaller levels pretty-printed for readability.
+    const pretty = beatmap.nodes.length <= 2500;
+    writeFileSync(outPath, `${JSON.stringify(beatmap, null, pretty ? 2 : 0)}\n`, "utf8");
     const d = beatmap.debug.densityProfile;
     console.log(
       `${level.title} (${level.difficulty}): ${d.nodeCount} nodes, interval ${d.minInterval}-${d.maxInterval}s, ` +

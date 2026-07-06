@@ -3,7 +3,7 @@ import { join, resolve } from "node:path";
 
 const root = resolve(process.cwd());
 const beatmapDir = join(root, "beatmaps", "dist");
-const beatmapFiles = Array.from({ length: 13 }, (_, i) => `level${i + 1}.beatstar.json`);
+const beatmapFiles = Array.from({ length: 23 }, (_, i) => `level${i + 1}.beatstar.json`);
 const approvedColors = new Set(["#FF4FCB", "#4FFFEF", "#FFDD00", "#A855F7", "#FF6B35", "#39FF14"]);
 const visualTypes = new Set([
   "shipFlyby", "laserSweep", "starfall", "nebulaPulse", "backgroundBurst",
@@ -84,7 +84,7 @@ function auditBeatmap(file) {
     const spacing = Math.hypot(node.x - prev.x, node.y - prev.y);
     intervals.push(interval);
     distances.push(spacing);
-    if (interval < 0.044) fail(`${file}: node ${i} interval ${interval.toFixed(3)} is below the omega-spam floor.`);
+    if (interval < 0.0012) fail(`${file}: node ${i} interval ${interval.toFixed(4)} is below the impossible-tier floor.`);
     if (spacing < 52) fail(`${file}: node ${i} spacing ${spacing.toFixed(1)}px is too tight to read.`);
     if (interval < 0.2) fastNodes += 1;
     if (interval > 0.7) slowNodes += 1;
